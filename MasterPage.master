@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<%@ Register Src="~/Uc_Footer.ascx" TagName="Footer" TagPrefix="UC" %>
+<%@ Register Src="~/Uc_Header.ascx" TagName="Header" TagPrefix="UC" %>
+<%@ Register Src="~/FooterText.ascx" TagName="FooterText" TagPrefix="UC" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Bansal Insurance, Brilliant Insurance, Insurance agent, Insurance, Fund Performance, NRI Investment, Tax Planning, Financial Planning, Financial Investments, SIP, Dividend, 80C, Growth Calculator, Financial Calculator, Term Insurance, Child Plan, Guaranteed Plan, Pension Plan, Money Back Plan, Car Insurance, Home Insurance, Travel Insurance, KYC, Uttar Pradesh" />
+    <meta name="description" content="Mr. Ghanshyam Bansal, The founder-president of Bansal Insurance (Brilliant Insurance) ‘ THE RELATIONSHIP KING’ in the Insurance Industry. Mr. Ghanshyam ranks among the top 10 insurance advisors in the Life Insurance Corporation of India. LIC being the mother company Mr. Ghanshyam is also a Chief Life Insurance Advisor and a Life time member of Million Dollar Round Table ( an apex qualification for insurance professionals all over the world) " />
+    <link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+		<script src="js/modernizr.custom.js"></script>
+	<![endif]-->
+    <script src="js/MainFile.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- wrapper -->
+        <div id="wrapper">
+            <!-- shell -->
+            <div class="shell">
+                <!-- container -->
+                <div class="container">
+                    <!-- Header -->
+                    <UC:Header ID="header" runat="server" />
+
+                    <div class="main">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <UC:FooterText ID="FooterText" runat="server" />
+                <UC:Footer ID="Footer" runat="server" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
